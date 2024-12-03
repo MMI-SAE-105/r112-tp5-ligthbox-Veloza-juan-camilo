@@ -20,7 +20,7 @@
     width: 40px;
     height: 40px;
     place-content: center;
-    background-color: #fff;
+    background-color: #f0ce48;
     line-height: 40px;
     border-radius: 50%;
     z-index: 10;
@@ -29,4 +29,30 @@
 ::backdrop{
     background-color: #eef;
     opacity: 0.8;
+}
+#lightbox[open]{
+    animation-duration: 2s;
+    animation-name: entre;
+}
+#lightbox.sortie{
+    animation-duration: 3s;
+    animation-name: sortie;
+}
+@keyframes entre{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes sortie{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity: 0;
+        transform: scale(0);
+    }
 }
