@@ -1,6 +1,36 @@
 /**
 * Lightbox
 */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+code{
+    padding: 20px;
+    background-color: #f0ede1;
+    border-radius: 0 0 40px 0;
+}
+ul{
+    list-style: none;
+    padding: 10px;
+    margin: 30px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0px;
+    height: 100px;
+    background-color: #f0ce48;
+    border-radius: 0 0 60px 0;
+
+}
+.header::before{
+    content: "TP-5";
+}
+
 #lightbox{
     position: fixed;
     padding: 30px;
@@ -35,7 +65,7 @@
     animation-name: entre;
 }
 #lightbox.sortie{
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: sortie;
 }
 @keyframes entre{
